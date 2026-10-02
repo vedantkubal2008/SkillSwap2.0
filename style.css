@@ -1,0 +1,675 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+marquee {
+  font-size: 40px;
+  border: 3px solid #747272;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background:#e4dada;
+}
+
+.site-header {
+  position: sticky;
+  background: #000;
+  color: #fff;
+  padding: 24px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.site-header .logo span {
+  color: #e60000;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navigation a:hover {
+  color: #e60000;
+}
+
+.navigation a.active {
+  border-bottom: 2px solid #e60000;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background: #f2f2f2;
+}
+
+.hero-text {
+  flex: 2;
+  padding-right: 30px;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 5px 0 15px 0;
+}
+
+.hero span {
+  color: #e60000;
+}
+
+.hero .intro {
+  max-width: 600px;
+  margin: 0 0 15px 0;
+}
+
+.hero-links {
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 5px;
+  background: #e60000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: #990000;
+}
+
+.button.outline {
+  background: transparent;
+  border: 1px solid #e60000;
+  color: #e60000;
+}
+
+.button.outline:hover {
+  background: #e60000;
+  color: #fff;
+}
+
+.exchange-box {
+  flex: 1;
+  background: #fff;
+  border: 10px outset #747272;
+  padding: 10px;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+.exchange-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.exchange-person {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.exchange-person .avatar {
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #fff;
+  border: 5px inset #0c0c0c;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: scale(1.03);
+}
+
+.skill-symbol {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #e60000;
+}
+
+.rules-section {
+  padding: 30px;
+  background: #f0f0f0;
+}
+
+.rules li {
+  margin: 8px 0;
+}
+
+.home-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.home-cta h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .logo span {
+  color: #e60000;
+}
+
+/*  Offer*/
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-heading h1 {
+  font-size: 40px;
+  color: #000;
+}
+
+.page-heading .small-title {
+  color: #e60000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.form-info {
+  flex: 1;
+  background: #fff;
+  border: 5px inset #0c0c0c;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.form-info h2 {
+  color: #000;
+}
+
+.form-info .small-title {
+  color: #e60000;
+  font-weight: bold;
+}
+
+.form-tips {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.form-tips li {
+  margin-bottom: 8px;
+}
+
+.skill-form {
+  flex: 2;
+  background: #fff;
+  border: 10px outset #747272;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+legend {
+  font-weight: bold;
+  color: #e60000;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #000;
+  outline: none;
+  background: #fff;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.submit-button {
+  background: #e60000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #990000;
+}
+
+/* explore */
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.category-list a {
+  background: #e60000;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.category-list a:hover {
+  background: #990000;
+}
+
+.light-section {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 30px 20px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: #fff;
+  border: 5px inset #0c0c0c;
+  padding: 15px;
+  border-radius: 40px;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: scale(1.03);
+}
+
+.student-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.large-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.large-avatar.purple { background: purple; }
+.large-avatar.orange { background: orange; }
+.large-avatar.green { background: green; }
+
+.student-skills {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.student-skills span {
+  font-size: 12px;
+  color: #555;
+}
+
+.profile-link {
+  color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #000;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  .hero-content,
+  .rules-layout,
+      .form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+  .navigation {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+    }
+
+    .skill-grid,
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .idea-card {
+        box-shadow: 6px 6px 0 #aeb2ba;
+    }
+.section-heading h2,
+.rules h2,
+.cta h2,
+.form-intro h2 {
+        font-size: 2rem;
+    }
+.skill-form {
+        padding: 22px;
+    }
+.footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.paid-learning {
+  padding: 40px 20px;
+}
+
+.paid-learning > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.paid-learning > p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+.paid-learning > h2 {
+  color: #000;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.paid-learning > h2 + p {
+  text-align: left;
+  margin: 0 0 20px;
+}
+.paid-learning form {
+  background: #fff;
+  border: 5px inset #0c0c0c;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.paid-learning form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.paid-learning form input,
+.paid-learning form select,
+.paid-learning form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.paid-learning form input:focus,
+.paid-learning form select:focus,
+.paid-learning form textarea:focus {
+  border-color: #e60000;
+  outline: none;
+}
+.paid-learning form button {
+  background: #e60000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.paid-learning  form button:hover {
+  background: #990000;
+}
+@media (max-width: 600px) {
+
+  .paid-learning {
+    padding: 25px 15px;
+  }
+
+  .paid-learning > h1 {
+    font-size: 32px;
+  }
+
+  .paid-learning form {
+    padding: 15px;
+  }
+
+  .paid-learning > article {
+    padding: 15px;
+  }
+
+  .paid-learning > article strong {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+}
+#paidTeacherCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+
+/* Individual card */
+
+.paid-teacher-card {
+    background: #fff;
+    border: 5px inset #0c0c0c;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.paid-teacher-card:hover {
+    transform: scale(1.03);
+}
+
+
+/* Teacher name */
+
+.paid-teacher-card h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+
+/* Card information */
+
+.paid-teacher-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.paid-teacher-card strong {
+    color: #000;
+}
+
+
+/* Fee */
+
+.paid-teacher-card p:nth-of-type(2) {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.paid-learning hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 35px 0;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .paid-learning {
+        padding: 25px 15px;
+    }
+
+    .paid-learning h1 {
+        font-size: 32px;
+    }
+
+    .paid-learning form {
+        padding: 18px;
+        border-width: 5px;
+    }
+
+    #paidTeacherCards {
+        grid-template-columns: 1fr;
+    }
+
+}
